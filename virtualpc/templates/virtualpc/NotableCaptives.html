@@ -1,0 +1,52 @@
+{% extends "virtualpc/base.html" %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+
+<head>
+    {% block head %}
+    {% load static %}
+    <title>Notable Captives</title>
+    {% endblock head %}
+</head>
+
+<body>
+    {% block body %}
+    <div class='parent' onclick="location.href='{% url 'index' trig=1%}';">
+        <div id='folder' class='folderBack' >
+            
+        </div>
+        <div class='EnglishText' >
+            <p>Home</p>
+        </div>
+    </div>
+    
+        <div class='fileExplorer'>
+            <div class='captiveimage'>
+                <img class='cimage' src="{{captive.image}}" alt="Item Image">
+            </div>
+            <div class='captiveinfo animate'>
+                <p><b>Date of Acquisition:</b> {{captive.date_of_acquisition}}</p><br>
+                <p><b>Status:</b> {{captive.status}}</p><br>
+                <p><b>Comments:</b> {{captive.comments}}</p><br>
+            </div>
+            <div class = 'next animate'>
+                <a href='{% url "notableCaptives" captiveid=previd %}'>Previous</a>  &nbsp;&nbsp;  <a href='{% url "notableCaptives" captiveid=nextid %}'>Next</a>
+            </div>
+        </div>
+    {% endblock body %}
+</body>
+{% block below %}
+
+
+<style>
+
+   
+    
+</style>
+<script>
+
+</script>
+{% endblock below %}
+
+</html>

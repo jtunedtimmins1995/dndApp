@@ -1,0 +1,204 @@
+.AlienText {
+    position: absolute;
+    top: 90px;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    opacity: 1
+}
+
+.EnglishText {
+    position: absolute;
+    top: 90px;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    opacity: 0;
+    animation: .8s shake infinite alternate;
+}
+
+.shake {
+    animation: .8s shake infinite alternate;  
+}
+
+.animate {
+    animation: .8s shake infinite alternate;
+}
+
+@keyframes shake {
+    /* 0% { transform: translate(1px, 1px) rotate(0deg); } */
+    10% {
+        transform: translate(-1px, -2px) rotate(0deg);
+    }
+    /* 20% { transform: translate(-1px, -2px) rotate(0deg); } */
+    30% {
+        transform: translate(1px, -2px) rotate(0deg);
+    }
+    /* 40% { transform: translate(1px, -1px) rotate(0deg); } */
+    50% {
+        transform: translate(-1px, 2px) rotate(0deg);
+    }
+    /* 60% { transform: translate(1px, -2px) rotate(0deg); } */
+    70% {
+        transform: translate(1px, -2px) rotate(0deg);
+    }
+    /* 80% { transform: translate(-1px, -1px) rotate(0deg); } */
+    90% {
+        transform: translate(-1px, 2px) rotate(0deg);
+    }
+    /* 100% { transform: translate(1px, -2px) rotate(0deg); } */
+}
+
+.folder {
+    height: 90px;
+    width: 100px;
+    background: url("/static/virtualpc/folderIcon.png") no-repeat;
+    background-size: cover;
+    color: white;
+    /* width: 100%;   */
+}
+
+.email {
+    height: 90px;
+    width: 100px;
+    background: url("/static/virtualpc/emailIcon.png") no-repeat;
+    background-size: cover;
+    color: white;
+    transition: 2s left ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.folderBack {
+    height: 90px;
+    width: 100px;
+    background: url("/static/virtualpc/folderBack.png") no-repeat;
+    background-size: cover;
+    color: white;
+    /* width: 100%;   */
+}
+
+.parent {
+    height: 150px;
+    width: 100px;
+    position: relative;
+}
+
+.fileExplorer {
+    height: 600px;
+    width: 800px;
+    padding: 10px;
+    background: url("/static/virtualpc/fileExplorer.png") no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 25%;
+    top: -10%
+}
+
+.captiveimage {
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 150px;
+    left: 120px;
+}
+
+.show {
+    opacity: 1
+}
+
+.captiveinfo {
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 150px;
+    left: 420px;
+    color: black;
+    padding-left: 10px;
+}
+
+.cimage {
+    height: 100%;
+    width: 100%;
+}
+
+.next {
+    color: black;
+    width: 60%;
+    height: 20px;
+    position: absolute;
+    bottom: 25px;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.floatr {
+    float: right;
+}
+.floatl {
+    float: left;
+}
+.startBlack {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    opacity: 1
+}
+
+.startLogo {
+    background: url("/static/virtualpc/scifiLogo.png") no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    opacity: 0
+}
+
+.emailText {
+    height: 600px;
+    width: 800px;
+    background: url("/static/virtualpc/emailTemplate.png") no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+    left: 250%;
+    top: -150%;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    opacity: 0;
+    z-index: 2;
+}
+
+.call {
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    top: 5px;
+    right: -200px;
+    background-color: #DCDCDC;
+    transition: right 0.3s;
+    -webkit-transition: right 0.3s;
+    border-radius: 25px;
+    color: black;
+    overflow: hidden;
+}
+
+.hover:hover {
+    background-color: #C0C0C0;
+}
